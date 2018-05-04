@@ -51,10 +51,13 @@ function promptCustomerForItem(inventory) {
 
 function promptCustomerForQuantity(product) {
     inquirer.prompt([{
-        //prompt for quanity  (going to be a number)
+        //prompt for quantity  (going to be a number)
+        type: 'input',
+        name: 'choice', 
+        message: 'How many units?',
     }]).then(function(val) {
-        let quanity = parseInt(val.quantity);
-        if (quanity > product.stock_quantity) {
+        let quantity = parseInt(val.quantity);
+        if (quantity > product.stock_quantity) {
             console.log('not enough');
             loadProducts();
         } else {
@@ -63,7 +66,7 @@ function promptCustomerForQuantity(product) {
     })
 }
 
-function makePurchase(purchase, quantity) {
+function makePurchase(product, quantity) {
     connection.query(
         //update database
         'UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?'
@@ -76,7 +79,7 @@ function makePurchase(purchase, quantity) {
 
 function checkInventory(choiceID, inventory) {
     for(var i=0; i < inventory.length; i++) {
-        if (inventory[i].item_id === choiceId) {
+        if (inventory[i].item_id === choiceID) {
             return inventory[i];
         }
     }

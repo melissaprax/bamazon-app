@@ -5,3 +5,7 @@ VALUES ('Specialized Bike', 'Sports', 599.99, 1),
 ('Necklace', 'Jewelry', 48.76, 9),
 ('Mac Laptop', 'Technology', 1299.99, 9),
 ('HP Laptop', 'Technology', 1000.50, 7),
+('Tapestry', 'Decor', 25.89, 1),
+('Frame', 'Decor', 10.00, 3),
+('Plant Pot', 'Gardening', 19.99, 8),
+('Watering Can', 'Gardening', 7.99, 6);
