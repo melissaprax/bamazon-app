@@ -69,7 +69,7 @@ function promptCustomerForQuantity(product) {
 function makePurchase(product, quantity) {
     connection.query(
         //update database
-        'UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?'
+        //'UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?'
         [quantity, product.item_id],
         function(err, res) {
 
