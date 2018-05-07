@@ -8,5 +8,5 @@ This application is an Amazon-like storefront. The app takes in orders from cust
 
 I used mySQL and Node.js to write this app. Additionally, inquirer and console.table NPM packages help with formatting and navigation through the Node terminal.
 
-![Inventory and initial prompts](./bamazon-app/Screen Shot 2018-05-06 at 6.54.03 PM.png)
+![Inventory and initial prompts](https://github.com/melissaprax/bamazon-app/blob/master/Screen%20Shot%202018-05-06%20at%206.54.03%20PM.png)
 
